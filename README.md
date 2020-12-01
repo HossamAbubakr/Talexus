@@ -48,7 +48,9 @@ You can get the project up and running in 4 simple steps.
 ```
 pip install -r requirements.txt
 ```
-
+```
+npm install
+```
 2. Supply your own Database connection string at config.py
 ```
 SQLALCHEMY_DATABASE_URI = 'CONNECTION STRING HERE'
