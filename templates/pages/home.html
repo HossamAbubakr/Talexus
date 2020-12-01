@@ -1,0 +1,48 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Talexus{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-6">
+		<img id="talexus" src="{{ url_for('static',filename='img/talexus.png') }}" alt="Front Photo of Musical Band" />
+		<p class="lead">The biggest gathering of talents and venues!</p>
+		<h3>
+			<a href="/venues"><button class="btn btn-primary btn-lg">Find a venue</button></a>
+			<a href="/venues/create"><button class="btn btn-default btn-lg">Post a venue</button></a>
+		</h3>
+		<h3>
+			<a href="/artists"><button class="btn btn-primary btn-lg">Find an artist</button></a>
+			<a href="/artists/create"><button class="btn btn-default btn-lg">Post an artist</button></a>
+		</h3>
+		<p class="lead">Publicize your show for free.</p>
+		<h3>
+			<a href="/shows/create"><button class="btn btn-default btn-lg">Post a show</button></a>
+		</h3>
+		<table>
+			<p class="lead">Our latests additons!</p>
+			<tr>
+			  <th>Artist</th>
+			  <th>Location</th>
+			</tr>
+			{% for artist in artists %}
+			<tr onclick="window.location='/artists/{{ artist.id }}'" style="cursor: pointer; color: darkblue;">
+				<td>{{ artist.name }}&nbsp;&nbsp;</td>
+				<td>{{ artist.city }} {{ artist.state }}</td>
+			</tr>
+			{% endfor %}
+			<tr>
+				<th>Venue</th>
+				<th>Location</th>
+			  </tr>
+			  {% for venue in venues %}
+			  <tr onclick="window.location='/venues/{{ venue.id }}'" style="cursor: pointer; color: darkblue;">
+				<td>{{ venue.name }}&nbsp;&nbsp;</td>
+				<td>{{ venue.city }} {{ venue.state }}</td>
+			  </tr>
+			  {% endfor %}
+		  </table>
+	</div>
+	<div class="col-sm-6 hidden-sm hidden-xs">
+		<img id="front-splash" src="{{ url_for('static',filename='img/front-splash.jpg') }}" alt="Front Photo of Musical Band" />
+	</div>
+</div>
+{% endblock %}

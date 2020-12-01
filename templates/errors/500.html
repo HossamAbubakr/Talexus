@@ -1,0 +1,10 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+<h1>Oops ...</h1>
+<!-- {% if not error %}
+<p>Something went wrong.</p>
+{% else %} -->
+<h1>{{ error }}</h1>
+<!-- {% endif %} -->
+<p><a href="{{url_for('index')}}">Back</a></p>
+{% endblock %}
