@@ -18,6 +18,8 @@
 
 Talexus is an app to connect artists and venues made using Javascript, Python and Flask that I built to practice full stack programming as part of udacity nanodegree.
 
+It demonstrates my understanding of full stack development, including creating and deploying a flask server as a backend and creating a comprehensive frontend attached to it 
+
 ## Technologies
 
 Flask was used as a backend using python.  
@@ -120,8 +122,6 @@ HTML, CSS, Pure JS, WTForms and Bootstrap was used for the front end.
             show_artist.html
             show_venue.html
             venues.html
-            
-
 ```
 
 ## Usage and Installation
