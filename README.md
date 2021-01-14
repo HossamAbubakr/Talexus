@@ -149,6 +149,6 @@ flask db upgrade
 ```
 4. Use The following command to start the server and voila!
 ```
-set FLASK_APP=ap.py
+set FLASK_APP=app.py
 flask run
 ```
