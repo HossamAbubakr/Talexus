@@ -10,7 +10,9 @@
 
 * [Features](#Features)
 
-* [Usage](#Usage)
+* [Structure](#Structure)
+
+* [Usage and Installation](#usage-and-installation)
 
 ## Summary
 
@@ -38,8 +40,91 @@ HTML, CSS, Pure JS, WTForms and Bootstrap was used for the front end.
 
 6. View upcoming and past shows
 
-		 
-## Usage
+## Structure
+```
++
+|   app.py
+|   config.py
+|   error.log
+|   fabfile.py
+|   forms.py
+|   package-lock.json
+|   package.json
+|   README.md
+|   requirements.txt
+|   
++---static
+|   +---css
+|   |       bootstrap-theme.css
+|   |       bootstrap-theme.min.css
+|   |       bootstrap.css
+|   |       bootstrap.min.css
+|   |       bootstrap.min.js
+|   |       layout.forms.css
+|   |       layout.main.css
+|   |       main.css
+|   |       main.quickfix.css
+|   |       main.responsive.css
+|   |       
+|   +---fonts
+|   |       fontawesome-webfont.eot
+|   |       fontawesome-webfont.svg
+|   |       fontawesome-webfont.ttf
+|   |       fontawesome-webfont.woff
+|   |       FontAwesome.otf
+|   |       
+|   +---ico
+|   |       favicon.png
+|   |       
+|   +---img
+|   |       .gitkeep
+|   |       front-splash.jpg
+|   |       talexus.png
+|   |       
+|   \---js
+|       |   plugins.js
+|       |   script.js
+|       |   
+|       \---libs
+|               bootstrap-3.1.1.min.js
+|               jquery-1.11.1.min.js
+|               jquery-1.11.1.min.map
+|               modernizr-2.8.2.min.js
+|               moment.min.js
+|               respond-1.4.2.min.js
+|               
+\---templates
+    +---errors
+    |       404.html
+    |       500.html
+    |       
+    +---forms
+    |       edit_artist.html
+    |       edit_venue.html
+    |       new_artist.html
+    |       new_show.html
+    |       new_venue.html
+    |       
+    +---layouts
+    |       form.html
+    |       main.html
+    |       
+    \---pages
+            artists.html
+            home.css
+            home.html
+            search_artists.html
+            search_venues.html
+            show.html
+            shows.html
+            show_artist.html
+            show_venue.html
+            venues.html
+            
+
+```
+
+## Usage and Installation
 
 All the models for the database are already included and ready for use.
 You can get the project up and running in 4 simple steps.
