@@ -137,7 +137,7 @@ pip install -r requirements.txt
 npm install
 ```
 2. Supply your own Database connection string at config.py
-```
+```python
 SQLALCHEMY_DATABASE_URI = 'CONNECTION STRING HERE'
 ```
 3. Migrate the models to your database
